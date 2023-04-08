@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
-    const [acc_number, setAccountNumber] = useState("");
-    const [password, setPassword] = useState("");
+    const [acc_number, setAccountNumber] = useState("222ffh");
+    const [password, setPassword] = useState("xfxddfgh");
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -23,12 +23,12 @@ const Login = () => {
                 <div className="form">
                     <form>
                         <input
-                            type="email"
+                            type="text"
                             placeholder="Enter Account number"
                             onChange={(e) => setAccountNumber(e.target.value)}
                         />
                        <input
-                            type="password"
+                            type="text"
                             placeholder="Password"
                             onChange={(e) => setPassword(e.target.value)}
                         />
