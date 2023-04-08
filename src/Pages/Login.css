@@ -1,0 +1,35 @@
+
+
+form{
+    display:flex;
+    flex-direction:column;
+    margin-top: 450px;
+    margin-left: 130px;
+}
+
+input {
+    padding: 0.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    width:300px;
+}
+
+.loginButton{
+    padding: 0.5rem;
+    width:320px;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    margin-left: 130px;
+    background-color:rgb(233, 64, 13);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.passwordlink{
+    margin-left:135px;
+    display:flex;
+    justify-content:space-between
+}
