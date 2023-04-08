@@ -15,16 +15,47 @@ const Home = () => {
   };
 
   return (
-    <div className="all" style={{ backgroundRepeat:"no-repeat", backgroundSize:"cover",backgroundImage: "url(/icons/house_635VI.jpg)", height: "100vh", width: "100%" }}>
+    <div className="all" style={{ backgroundRepeat:"no-repeat", backgroundSize:"cover",backgroundImage: "url(/icons/house_635VI.jpg)", height: "100%", width: "100%" }}>
       <Navbar />
       <br/> 
 
-      <div className="entry" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/icons/gtcologo.png)", marginLeft:"10px" , height: "200px", width: "250px" }}></div>
+      <div className="entry" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/icons/GTworldicon.png)", marginLeft:"40px" , height: "350px", width: "400px" }}></div>
+      <h3>GTWorld</h3>
        <br/> 
-       <div>
-        <img src="./icons/" alt=""/>
+      <div className="prelogin_icons">
+        <section>
+          <div>
+            <img src="./icons/QuickBalanceIcon.png" alt=""/>
+            <h5>Quick Balance</h5>
+          </div>
+          <div>
+            <img src="./icons/QuickTransferIcon.png" alt=""/>
+            <h5>Quick Transfer</h5>
+          </div>
+          <div>
+            <img src="./icons/QuickAirtimeIcon.png" alt=""/>
+            <h5>Quick Airtime</h5>
+          </div>
 
-       </div>
+        </section>
+
+        <section>
+          <div>
+            <img src="./icons/SoftTokenIcon.png" alt=""/>
+            <h5>Soft token</h5>
+          </div>
+          <div>
+            <img src="./icons/AccountManagerIcon.png" alt=""/>
+            <h5>Account Manager</h5>
+          </div>
+          <div>
+            <img src="./icons/OpenAccountIcon.png" alt=""/>
+            <h5>Open Account</h5>
+          </div>
+
+        </section>
+
+      </div>
        <br/>
 
       <div className="login">

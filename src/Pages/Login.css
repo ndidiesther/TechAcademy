@@ -9,7 +9,7 @@ form{
 
 input {
     padding: 0.5rem;
-    color: white;
+    color: black;
     margin-bottom: 1rem;
     width:300px;
 }
@@ -19,7 +19,7 @@ input {
     width:320px;
     border-radius: 0.25rem;
     margin-bottom: 1rem;
-    margin-left: 130px;
+    margin-left: 0px;
     background-color:rgb(233, 64, 13);
     border: none;
     color: #fff;

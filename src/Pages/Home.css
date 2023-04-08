@@ -1,4 +1,12 @@
- 
+ *{
+  margin:0;
+  padding:0;
+ }
+ h3{
+  color:#fff;
+  font-size:20px;
+  padding-left:120px;
+ }
  .login{
     display:flex;
     justify-content: space-between;
@@ -39,6 +47,28 @@
   
   button:active {
     background-color: rgb(233, 64, 13);
+  }
+
+  h5{
+    color:white;
+    width:10px;
+    padding-left: 40px;
+  }
+
+  .prelogin_icons{
+    position:relative;
+  }
+
+  .prelogin_icons img{
+    width:70px;
+    margin-left:30px;
+    margin-top: 50px;
+  }
+  section{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 40px;
   }
   
  
