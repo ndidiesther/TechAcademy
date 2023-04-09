@@ -19,8 +19,8 @@ const Home = () => {
       <Navbar />
       <br/> 
 
-      <div className="entry" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/icons/GTworldicon.png)", marginLeft:"40px" , height: "350px", width: "400px" }}></div>
-      <h3>GTWorld</h3>
+      <div className="entry" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/icons/gtcologo.png)", marginLeft:"40px" , height: "350px", width: "400px" }}></div>
+      
        <br/> 
       <div className="prelogin_icons">
         <section>

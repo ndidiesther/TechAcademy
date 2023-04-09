@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Link } from "react-router-dom";
 import "./Login.css";
 
+
 const Login = () => {
     const [acct_number, setAccountNumber] = useState("");
     const [password, setPassword] = useState("");
@@ -27,14 +28,13 @@ const Login = () => {
 
         data = JSON.stringify(data);
 
-        let loginUser = async function (url, userData) {
+        let loginUser = async function (url) {
 
             let response = await fetch(url, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: userData
             });
 
         }
@@ -48,7 +48,7 @@ const Login = () => {
     <>
       <div className="all" style={{ backgroundRepeat:"no-repeat", backgroundSize:"cover",backgroundImage: "url(/icons/house_635VI.jpg)",opacity:"1", positon:"relative", height: "100vh", width: "100%" }}>
         <div className="wrapper">
-        <div className="entry" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/icons/gtworldicon.png)", marginLeft:"100px", position:"absolute" ,top:"50px", height: "350px", width: "400px" }}></div>
+        <div className="entry" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/icons/gtcologo.png)", marginLeft:"180px", position:"absolute" ,top:"180px", height: "350px", width: "400px" }}></div>
       </div>
         <div className="login">
             <div className="container">
@@ -68,7 +68,7 @@ const Login = () => {
                 
                 <div className="passwordlink">
                     <Link to="/" className="link1">Forgot password?</Link>
-                    <Link to="/" className="link2">Sign Up</Link>
+                    <Link to="/Createuser" className="link2">Create new user</Link>
                 </div>
             </div>
         </div>
