@@ -7,8 +7,8 @@ const Signup = () => {
     const navigate = useNavigate()
 
     const handleClick = (e) => {
-        alert("Welcome your GTban account has been created");
-        navigate('/login');
+        alert("Welcome,you have successfully created a GTbank account!.");
+        navigate('/home');
     };
     
 

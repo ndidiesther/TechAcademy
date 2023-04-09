@@ -1,47 +1,39 @@
 import React, {useState} from 'react';
-import { Link } from "react-router-dom";
+import {useNavigate,Link } from "react-router-dom";
 import "./Login.css";
 
 
-const Login = () => {
-    const [acct_number, setAccountNumber] = useState("");
-    const [password, setPassword] = useState("");
+  const Login = () => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
-    const handleChange = (e) => {
-        e.preventDefault();
-
-        if (e.target.name === 'acct_number') {
-            setAccountNumber(e.target.value);
-        }
-        if (e.target.name === 'password') {
-            setPassword(e.target.value);
-        }
-
-    }
-
-    const handleSubmit = (e) => {
-
-        e.preventDefault();
-        let data = { acct_number,password,
-
-        }
-
-        data = JSON.stringify(data);
-
-        let loginUser = async function (url) {
-
-            let response = await fetch(url, {
-                method: "POST",
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
-
-        }
+    const navigate = useNavigate()
+  
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+      const response = await fetch('https://22a4-102-89-22-182.ngrok-free.app/api/UserIds', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          username,
+          password
+        })
+      });
+      const data = await response.json();
+      console.log(data);
+      if (data.error) {
+        // Username and password are correct, navigate to another page
+        alert('Invalid username or password');
+      } else {
+        // Username and/or password are incorrect, display error message
+        alert("Welcome");
+        navigate('/dashboard');
+      }
+    };
 
 
-
-    }
     
 
     return (
@@ -53,15 +45,13 @@ const Login = () => {
         <div className="login">
             <div className="container">
                 <div className="form">
-                    <form onSubmit={handleSubmit} action="" method="POST">
-                        <input type="text" placeholder="Enter Account number" onChange={handleChange}/>
-                        <input type="password" placeholder="Password" onChange={handleChange} />
-
-                        <button className="loginButton">
-                            <Link to="/home" className="link">Login</Link>
-                        </button>
-                    
-                    </form>
+                  <form onSubmit={handleSubmit} >
+                    <input type="text" placeholder="Enter Account number" value={username} onChange={(event) => setUsername(event.target.value)}/>
+                    <input type="password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)}/>
+    
+                    <button className="loginButton">Login</button>
+                        
+                  </form>
 
                 </div>
 

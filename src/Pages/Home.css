@@ -1,7 +1,8 @@
- *{
+*{
   margin:0;
   padding:0;
  }
+
  .login{
     display:flex;
     justify-content: space-between;
@@ -15,7 +16,7 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 300px;
   }
 
@@ -44,27 +45,3 @@
     background-color: rgb(233, 64, 13);
   }
 
-  h5{
-    color:white;
-    width:10px;
-    padding-left: 40px;
-  }
-
-  .prelogin_icons{
-    position:relative;
-  }
-
-  .prelogin_icons img{
-    width:70px;
-    margin-left:30px;
-    margin-top: 50px;
-  }
-  section{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 40px;
-  }
-  
- 
-  
