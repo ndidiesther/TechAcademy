@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Createuser.css";
 
-const Signup = () => {
+const Createuser = () => {
 
     const navigate = useNavigate()
 
@@ -32,4 +32,4 @@ const Signup = () => {
   )
 }
 
-export default Signup;
+export default Createuser;
