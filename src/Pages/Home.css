@@ -1,12 +1,8 @@
- *{
+*{
   margin:0;
   padding:0;
  }
- h3{
-  color:#fff;
-  font-size:20px;
-  padding-left:120px;
- }
+
  .login{
     display:flex;
     justify-content: space-between;
@@ -20,20 +16,7 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 20px;
-    margin-top: 300px;
-  }
-
-  .login2{
-    background-color:rgb(233, 64, 13);
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 20px;
-    margin-right:20px;
+    margin-left: 10px;
     margin-top: 300px;
   }
   
@@ -49,27 +32,11 @@
     background-color: rgb(233, 64, 13);
   }
 
-  h5{
-    color:white;
-    width:10px;
-    padding-left: 40px;
+  @media (max-width: 600px) {
+    /* CSS styles for small screens go here */
+    .home{
+      position: relative;
+      right:135px;
+    }
   }
 
-  .prelogin_icons{
-    position:relative;
-  }
-
-  .prelogin_icons img{
-    width:70px;
-    margin-left:30px;
-    margin-top: 50px;
-  }
-  section{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 40px;
-  }
-  
- 
-  
