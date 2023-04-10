@@ -1,5 +1,4 @@
 
-
 form{
     display:flex;
     flex-direction:column;
@@ -31,5 +30,45 @@ input {
 .passwordlink{
     margin-left:135px;
     display:flex;
-    justify-content:space-between
+    justify-content:space-between;
 }
+
+.link2{
+    color: #fff;
+    text-decoration: none;
+}
+
+.link1{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    /* CSS styles for small screens go here */
+ 
+    .entry{
+        position: relative;
+        left: -35px;
+    }
+    .loginall{
+        position: relative;
+        left:14px;
+    }
+
+    input {
+        padding: 0.5rem;
+        color: black;
+        margin-bottom: 1rem;
+        margin-left: 9px;
+        width:15em;
+    }
+    .loginButton{
+        margin-left: 8px;
+        width:14em;
+        padding-left: 6px;
+        font-size: 16px;
+        cursor: pointer;
+    
+    }
+    
+  }

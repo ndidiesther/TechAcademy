@@ -20,3 +20,18 @@ h4{
 .signup button{
     margin-left: px;
 }
+
+@media (max-width: 600px) {
+    /* CSS styles for small screens go here */
+    .all{
+      position: relative;
+      right:135px;
+    }
+    .logo{
+        padding-left:-23px;
+
+    }
+    h3{
+        padding-left:1px;
+    }
+}

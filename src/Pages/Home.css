@@ -19,19 +19,6 @@
     margin-left: 10px;
     margin-top: 300px;
   }
-
-  .login2{
-    background-color:rgb(233, 64, 13);
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 20px;
-    margin-right:20px;
-    margin-top: 300px;
-  }
   
   button:hover {
     background-color:rgb(233, 64, 13);
@@ -43,5 +30,13 @@
   
   button:active {
     background-color: rgb(233, 64, 13);
+  }
+
+  @media (max-width: 600px) {
+    /* CSS styles for small screens go here */
+    .home{
+      position: relative;
+      right:135px;
+    }
   }
 

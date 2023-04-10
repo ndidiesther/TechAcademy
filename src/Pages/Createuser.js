@@ -8,7 +8,7 @@ const Signup = () => {
 
     const handleClick = (e) => {
         alert("Welcome,you have successfully created a GTbank account!.");
-        navigate('/home');
+        navigate('/login');
     };
     
 
