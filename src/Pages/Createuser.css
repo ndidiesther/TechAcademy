@@ -17,9 +17,6 @@ h4{
     opacity: 0.9;
 }
 
-.signup button{
-    margin-left: px;
-}
 
 @media (max-width: 600px) {
     /* CSS styles for small screens go here */

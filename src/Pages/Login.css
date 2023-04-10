@@ -6,6 +6,11 @@ form{
     margin-left: 130px;
 }
 
+.container{
+    position:relative;
+    bottom: 130px;
+}
+
 input {
     padding: 0.5rem;
     color: black;
