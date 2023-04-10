@@ -14,8 +14,8 @@ const Createuser = () => {
 
     return (
     <>
-    <div className="all" style={{ backgroundRepeat:"no-repeat", backgroundSize:"cover",backgroundImage: "url(/icons/skyscrapper.jpg)" ,opacity:"1", positon:"relative", height: "100vh", width: "100%" }}>
-        <div className="logo" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/icons/GTCO-60.png)", marginLeft:"260px", position:"absolute" ,top:"230px", height: "350px", width: "400px" }}></div>
+    <div className="all" style={{ backgroundRepeat:"no-repeat", backgroundSize:"cover",backgroundImage: "url(/Icons/skyscrapper.jpg)" ,opacity:"1", positon:"relative", height: "100vh", width: "100%" }}>
+        <div className="logo" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/Icons/GTCO-60.png)", marginLeft:"230px", position:"absolute" ,top:"230px", height: "350px", width: "400px" }}></div>
 
         <div className="signup">
             <h3>Open an account instantly</h3>

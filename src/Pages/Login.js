@@ -39,9 +39,9 @@ import "./Login.css";
 
     return (
     <div className="loginall">
-      <div className="all" style={{ backgroundRepeat:"no-repeat", backgroundSize:"cover",backgroundImage: "url(/icons/house_635VI.jpg)",opacity:"1", positon:"relative", height: "100vh", width: "100%" }}>
+      <div className="all" style={{ backgroundRepeat:"no-repeat", backgroundSize:"cover",backgroundImage: "url(/Icons/house_635VI.jpg)",opacity:"1", positon:"relative", height: "100vh", width: "100%" }}>
         <div className="wrapper">
-        <div className="entry" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/icons/GTCO-60.png)", marginLeft:"260px", position:"absolute" ,top:"180px", height: "400px", width: "400px" }}></div>
+        <div className="entry" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/Icons/GTCO-60.png)", marginLeft:"260px", position:"absolute" ,top:"180px", height: "400px", width: "400px" }}></div>
       </div>
         <div className="login">
             <div className="container">
