@@ -1,18 +1,17 @@
 import React from 'react';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 
 const Budget = () => {
+  return (
+    <div>
+      <Navbar />
+      Transaction
 
-    
-
-    return (
-    <>
-    <div>do the budget code here</div>
-
-    
-                
-    </>
+      <Footer />
+    </div>
   )
 }
 
-export default Budget;
+export default Budget
