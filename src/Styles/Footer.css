@@ -13,3 +13,13 @@
     justify-content: space-between;
     padding: 10px 50px;
 }
+.footer-black > div, .footer-black > a{
+    text-align: center;
+}
+.footer-black > a {
+    color: #c6c6c6;
+    text-decoration: none;
+}
+.highlight-text {
+    color: #EC632B;
+}

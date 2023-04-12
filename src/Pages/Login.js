@@ -51,7 +51,7 @@ import "./Login.css";
                     <input type="password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)}/>
     
                     <button className="loginButton">
-                      <Link to="/budget" className="link1">Login</Link>
+                      <Link to="/transaction" className="link1">Login</Link>
                     </button>
                         
                   </form>

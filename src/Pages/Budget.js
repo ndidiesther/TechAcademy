@@ -1,17 +1,20 @@
-import React from 'react';
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
-
+import React from "react";
+import Navbar from "../Components/Navbar";
+import { useNavigate } from "react-router-dom";
+import BudgetFooter from "../Components/BudgetFooter";
 
 const Budget = () => {
+
+
+
   return (
     <div>
       <Navbar />
-      Transaction
-
-      <Footer />
+      Budget
+      
+      <BudgetFooter />
     </div>
-  )
-}
+  );
+};
 
-export default Budget
+export default Budget;
