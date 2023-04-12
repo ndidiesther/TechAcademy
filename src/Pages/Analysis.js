@@ -1,14 +1,23 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
+import AnalysisFooter from '../Components/AnalysisFooter'
+import LeftArrow from "../Assets/Budget_Icons/caret_left.png"
+import RightArrow from "../Assets/Budget_Icons/caret_right.png"
 
 const Analysis = () => {
   return (
     <div>
         <Navbar />
-        Analysis
+        
+        <div>
 
-        <Footer />
+          <div>
+            <img src={LeftArrow} alt="" />
+            <img src={RightArrow} alt ="" />
+          </div>
+        </div>
+
+        <AnalysisFooter />
     </div>
   )
 }

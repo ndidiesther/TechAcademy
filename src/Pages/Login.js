@@ -52,11 +52,17 @@ import "./Login.css";
                       <input type="text" placeholder="Enter Account number" value={username} onChange={(event) => setUsername(event.target.value)}/>
                       <input type="password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)}/>
     
+<<<<<<< HEAD
                       <button className="loginButton">
                         <Link to="/budget" className="linky">Login</Link>
                       </button>
 
                     </div>
+=======
+                    <button className="loginButton">
+                      <Link to="/transaction" className="link1">Login</Link>
+                    </button>
+>>>>>>> c4f0463e669a08b35698ddfd07e1b5015f625044
                         
                   </form>
 
