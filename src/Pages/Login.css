@@ -1,15 +1,17 @@
 
 form{
+    position: relative;
+}
+.arrange{
     display:flex;
     flex-direction:column;
-    margin-top: 450px;
-    margin-left: 130px;
+    position: absolute;
+    top:300px;
+    left: 120px;
+
 }
 
-.container{
-    position:relative;
-    bottom: 130px;
-}
+
 
 input {
     padding: 0.5rem;
@@ -32,20 +34,31 @@ input {
     cursor: pointer;
 
 }
+
+.linky{
+    color: #fff;
+    text-decoration: none;
+
+}
+
 .passwordlink{
-    margin-left:135px;
+    margin-top:450px;
+    margin-left:120px;
     display:flex;
-    justify-content:space-between;
+    flex-direction: row;
+    gap:38px;
 }
 
 .link2{
     color: #fff;
     text-decoration: none;
+
 }
 
 .link1{
     color: #fff;
     text-decoration: none;
+    
 }
 
 @media (max-width: 600px) {

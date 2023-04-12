@@ -26,6 +26,7 @@ import "./Login.css";
       if (data.ok) {
         // Username and password are correct, navigate to another page
         alert('Invalid username or password');
+        navigate('/ ');
       } else {
         // Username and/or password are incorrect, display error message
         alert("Welcome");
@@ -45,14 +46,17 @@ import "./Login.css";
       </div>
         <div className="login">
             <div className="container">
-                <div className="form">
+                <div>
                   <form>
-                    <input type="text" placeholder="Enter Account number" value={username} onChange={(event) => setUsername(event.target.value)}/>
-                    <input type="password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)}/>
+                    <div className="arrange">
+                      <input type="text" placeholder="Enter Account number" value={username} onChange={(event) => setUsername(event.target.value)}/>
+                      <input type="password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)}/>
     
-                    <button className="loginButton">
-                      <Link to="/budget" className="link1">Login</Link>
-                    </button>
+                      <button className="loginButton">
+                        <Link to="/budget" className="linky">Login</Link>
+                      </button>
+
+                    </div>
                         
                   </form>
 
@@ -60,8 +64,8 @@ import "./Login.css";
 
                 
                 <div className="passwordlink">
-                    <Link to="/" className="link1">Forgot password?</Link>
-                    <Link to="/Createuser" className="link2">Create new user</Link>
+                  <div><Link to="/" className="link1">Forgot password?</Link></div>
+                  <span><Link to="/Createuser" className="link2">Create new user</Link></span>
                 </div>
             </div>
         </div>

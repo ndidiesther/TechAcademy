@@ -1,0 +1,114 @@
+/*
+h1{
+    text-align: center;
+}
+
+input{
+    position:relative;
+    left:7px;
+}
+ 
+.togglebuttons{
+    text-align: center;
+    padding:1px 20px;
+    transform: scale(1.4); 
+    transition: transform 0.2s;
+    color: #fff;
+}
+
+.form{
+     position: relative;
+     bottom:350px;
+     right:50px;
+     text-align: center;
+}
+span{
+    position:relative;
+    right:13px;
+}
+
+
+.buttontag{
+    background-color:rgb(233, 64, 13);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    bottom: 300px;
+    left:680px;
+    
+   
+}
+*/
+
+span img{
+   margin-top: 2px;
+   margin-left:-14px;
+}
+
+.togglebuttons{
+    text-align: center;
+    padding:1px 20px;
+    transform: scale(1.4); 
+    transition: transform 0.2s;
+    color: #fff;
+}
+
+.forms{
+    margin-top:20px;
+
+}
+
+.buttontag{
+    background-color:rgb(233, 64, 13);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    bottom: 2px;
+    left:100px;
+    
+   
+}
+
+.overage{
+    display: block;
+    width: 25%; /* or any width you desire */
+    margin: 0 auto;
+  
+}
+
+select {
+    width: 318px;
+    height: 32px;
+    margin-left:-1px;
+    margin-bottom:10px;
+}
+select:focus {
+    min-width: 320px;
+    min-height:32px;
+    width: auto;
+}
+/*
+.change{
+    position: absolute;
+    left:655px;
+}
+*/
+@media (max-width: 600px) {
+    /* CSS styles for small screens go here */
+    .buttontag{
+        position: relative;
+        bottom: 300px;
+        left:200px;
+
+    }
+  }
+
+
