@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home';
@@ -6,15 +6,19 @@ import Budget from './Pages/Budget';
 import Login from './Pages/Login';
 import Createuser from './Pages/Createuser';
 import Analysis from './Pages/Analysis';
-<<<<<<< HEAD
-import ManualTransaction from './Pages/ManualTransaction';
-import Income from './Pages/Income';
-=======
+import ExpenseTransaction from './Pages/ExpenseTransaction';
+import IncomeTransaction from './Pages/IncomeTransaction';
 import Transaction from './Pages/Transaction';
-import Category from './Pages/Category';
->>>>>>> c4f0463e669a08b35698ddfd07e1b5015f625044
+import Manual_Sync from "./Pages/Manual_Sync";
+import Sync from "./Pages/Sync";
+import Addnewtransactions from "./Pages/Addnewtransactions";
+import Addnewbudget from "./Pages/Addnewbudget";
+import Setbudget from "./Pages/Setbudget";
+import Choosebudget from "./Pages/Choosebudget";
 
 function App() {
+
+  
   return (
     <div className="App">
       
@@ -24,13 +28,15 @@ function App() {
         <Route path='/createuser' element={<Createuser />} />
         <Route path='/budget' element={<Budget />} />
         <Route path='/analysis' element={<Analysis />} />
-<<<<<<< HEAD
-        <Route path='/manualtransaction' element={<ManualTransaction />} />
-        <Route path='/income' element={<Income />} />
-=======
+        <Route path='/expensetransaction' element={<ExpenseTransaction />} />
+        <Route path='/incometransaction' element={<IncomeTransaction />} />
         <Route path='/transaction' element={<Transaction />} />
-        <Route path='/category' element={<Category />} />
->>>>>>> c4f0463e669a08b35698ddfd07e1b5015f625044
+        <Route path='/addnewtransactions' element={<Addnewtransactions />}/>
+        <Route path='/manual_sync' element={<Manual_Sync />}/>
+        <Route path='/sync' element={<Sync />}/>
+        <Route path='/addnewbudget' element={<Addnewbudget />}/>
+        <Route path='/setbudget' element={<Setbudget />}/>
+        <Route path='/choosebudget' element={<Choosebudget />}/>
 
 
       </Routes>

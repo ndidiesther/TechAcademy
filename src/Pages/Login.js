@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link } from "react-router-dom";
-import "./Login.css";
+import '../Styles/Login.css';
 
 
   const Login = () => {
@@ -40,10 +40,9 @@ import "./Login.css";
 
     return (
     <div className="loginall">
-      <div className="all" style={{ backgroundRepeat:"no-repeat", backgroundSize:"cover",backgroundImage: "url(/Icons/house_635VI.jpg)",opacity:"1", positon:"relative", height: "100vh", width: "100%" }}>
-        <div className="wrapper">
-        <div className="entry" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/Icons/GTCO-60.png)", marginLeft:"260px", position:"absolute" ,top:"180px", height: "400px", width: "400px" }}></div>
-      </div>
+      <div className="wrapper">
+      <div className="entry" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/Icons/GTCO-60.png)", marginLeft:"260px", position:"absolute" ,top:"180px", height: "400px", width: "400px" }}></div>
+      
         <div className="login">
             <div className="container">
                 <div>
@@ -52,17 +51,10 @@ import "./Login.css";
                       <input type="text" placeholder="Enter Account number" value={username} onChange={(event) => setUsername(event.target.value)}/>
                       <input type="password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)}/>
     
-<<<<<<< HEAD
-                      <button className="loginButton">
-                        <Link to="/budget" className="linky">Login</Link>
-                      </button>
-
-                    </div>
-=======
                     <button className="loginButton">
                       <Link to="/transaction" className="link1">Login</Link>
                     </button>
->>>>>>> c4f0463e669a08b35698ddfd07e1b5015f625044
+                    </div>
                         
                   </form>
 
@@ -70,8 +62,8 @@ import "./Login.css";
 
                 
                 <div className="passwordlink">
-                  <div><Link to="/" className="link1">Forgot password?</Link></div>
-                  <span><Link to="/Createuser" className="link2">Create new user</Link></span>
+                  <div><Link to="/createuser" className="link1">Create new user</Link></div>
+                  <span><Link to="/" className="link2">Forgot password?</Link></span>
                 </div>
             </div>
         </div>

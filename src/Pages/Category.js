@@ -1,19 +1,18 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import CategoryFooter from '../Components/CategoryFooter'
+import CategoryFooter from '../Components/CategoryFooter';
+
 
 const Category = () => {
   return (
-    
     <div>
-
         <Navbar />
-
-        Category
+        
+            Category
 
         <CategoryFooter />
     </div>
   )
 }
 
-export default Category
+export default Category;

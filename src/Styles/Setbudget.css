@@ -1,0 +1,27 @@
+
+
+.designbuttons button{
+    color:orangered;
+    width:100px;
+    height:30px;
+    border:2px solid orangered;
+    cursor:pointer;
+    
+}
+
+.designbuttons button:active{
+    background-color: rgb(233, 64, 13);
+}
+
+
+.recenttransaction4{
+    display:flex;
+    flex-direction: row;
+    margin-left:30%;
+
+}
+
+.recenttransaction4 h4{
+    opacity:0.6;
+    padding-top:14px;
+}

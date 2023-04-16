@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Createuser.css";
+import '../Styles/Createuser.css';
 
 const Createuser = () => {
   const navigate = useNavigate();
@@ -12,10 +12,6 @@ const Createuser = () => {
 
   return (
     <>
-<<<<<<< HEAD
-    <div className="all" style={{ backgroundRepeat:"no-repeat", backgroundSize:"cover",backgroundImage: "url(/Icons/skyscrapper.jpg)" ,opacity:"1", positon:"relative", height: "100vh", width: "100%" }}>
-        <div className="logo" style={{ backgroundRepeat:"no-repeat", backgroundImage: "url(/Icons/GTCO-60.png)", marginLeft:"230px", position:"absolute" ,top:"230px", height: "350px", width: "400px" }}></div>
-=======
       <div
         className="all"
         style={{
@@ -40,7 +36,6 @@ const Createuser = () => {
             width: "400px",
           }}
         ></div>
->>>>>>> c4f0463e669a08b35698ddfd07e1b5015f625044
 
         <div className="signup">
           <h3>Open an account instantly</h3>

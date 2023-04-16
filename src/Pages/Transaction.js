@@ -10,7 +10,6 @@ const Transaction = () => {
   return (
     <div>
       <Navbar />
-   
       <div className="content">
         <div className="top-date">
           <img src={LeftArrow} alt="" />

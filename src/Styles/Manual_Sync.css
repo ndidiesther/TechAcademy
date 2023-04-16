@@ -1,0 +1,22 @@
+.shifttransaction{
+    margin-left:50%;
+    margin-top: 10%;
+}
+.separatetransaction{
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.separatesync{
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.separatecancel{
+    margin-left:29%;
+    margin-top: 3%;
+
+}

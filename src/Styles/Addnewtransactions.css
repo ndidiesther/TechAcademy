@@ -1,0 +1,68 @@
+h4{
+    color:black
+}
+
+.manualcategory{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 195px;
+}
+
+.manualcategory span{
+    color: rgb(18, 204, 18);
+    font-size: medium;
+    font-weight: 600;
+}
+
+.manualcategory .redspan{
+    color: red;
+    font-size: medium;
+    font-weight: 600;
+
+}
+
+.allcapture{
+    margin-left: 460px;
+}
+
+.recenttransaction{
+    text-align: center;
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 800;
+}
+
+.recenttransaction2{
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.recenttransaction2 .redspan2{
+    color: red;
+    font-size: medium;
+    font-weight: 600;
+
+}
+
+.recenttransaction2 .greenspan2{
+    color: rgb(18, 204, 18);
+    font-size: medium;
+    font-weight: 600;
+}
+
+
+.recenttransaction3{
+    display: flex;
+    flex-direction: row;
+}
+
+.rightwing{
+    margin-left: 75%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 65px;
+}
+
+
