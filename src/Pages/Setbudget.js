@@ -50,8 +50,6 @@ const Setbudget = () => {
       </div>
 
       <br/>
-      <br/>
-      <br/>
 
       <div className="center2"> 
         <h2>Budget Categories: April, 2023</h2>
@@ -59,7 +57,6 @@ const Setbudget = () => {
         <h6>Not budgeted this month</h6>
       </div>
 
-      <br/>
       <br/>
 
       <div>
@@ -89,20 +86,6 @@ const Setbudget = () => {
                 </div>
             </div>
 
-                
-        </div>
-
-        <div className="recenttransaction3">
-            <div className="recenttransaction4">
-                <img src={Food} alt=""/>  
-                <span className='separate2'>
-                  <h4>Food</h4>
-                </span>
-
-                <div className="designbuttons">
-                    <Link to="/choosebudget"><button>Set Budget</button></Link>
-                </div>
-            </div>
                 
         </div>
 

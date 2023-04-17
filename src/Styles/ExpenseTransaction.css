@@ -109,8 +109,7 @@ span img{
 }
 
 .overage{
-    display: block;
-    width: 25%; /* or any width you desire */
+    width: 30%; /* or any width you desire */
     margin: 0 auto;
   
 }
