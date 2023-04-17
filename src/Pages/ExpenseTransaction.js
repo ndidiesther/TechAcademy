@@ -40,7 +40,7 @@ const ExpenseTransaction = () => {
   };
   
   //dealing with selection 
-  const [selectedCategory, setSelectedCategory] = useState();
+  const [selectedCategory, setSelectedCategory] = useState('Shopping');
   const categories = ['Shopping','Subscription','Food','Transportation','Education','Entertainment','Health','Drinks'];
   const SelectChange = (event) => {
     setSelectedCategory(event.target.value);
@@ -53,7 +53,15 @@ const ExpenseTransaction = () => {
   
   //event listener for onSubmit
   const btnClickEventHandler = () => {
-    console.log("all data", inputValue,inputDate,selectedCategory);
+    //console.log("all data", inputValue,inputDate,selectedCategory);
+    const formData = {
+      inputValue,
+      input2Value,
+      selectedCategory,
+      inputDate
+      
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
     navigate('/addnewtransactions');
   };
 
@@ -84,7 +92,6 @@ const ExpenseTransaction = () => {
             </div>
             <div>
               <input value={input2Value} onChange={handleInput2FieldChange} type="text" placeholder="Narration" />
-              <span><img src={Naira} alt='' /></span>
             </div>
 
             <div>

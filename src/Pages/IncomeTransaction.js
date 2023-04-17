@@ -50,13 +50,14 @@ const IncomeTransaction = () => {
   
   //event listener for onSubmit
   const btnClickEventHandler = () => {
-    let inputted = {
-      money:Number(inputValue),
-      date:Date(inputDate), 
-      desc:selectedCategory
-
-    }
-    console.log(inputted);
+    const formData = {
+      inputValue,
+      input2Value,
+      selectedCategory,
+      inputDate
+      
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
     navigate('/addnewtransactions');
   };
 
@@ -86,7 +87,6 @@ const IncomeTransaction = () => {
             </div>
             <div>
               <input value={input2Value} onChange={handleInput2FieldChange} type="text" placeholder="Narration" />
-              <span><img src={Naira} alt='' /></span>
             </div>
 
             <div>

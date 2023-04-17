@@ -1,7 +1,7 @@
-import React from "react";
+import React,{useState} from "react";
 import Navbar from "../Components/Navbar";
 import BudgetFooter from "../Components/BudgetFooter";
-import LeftArrow from "../Assets/Budget_Icons/caret_left.png"
+import LeftArrow from "../Assets/Budget_Icons/caret_left.png";
 import RightArrow from "../Assets/Budget_Icons/caret_right.png";
 import Shopping from "../Assets/Budget_Icons/shopping.png";
 import Subscription from "../Assets/Budget_Icons/subscription.png";
@@ -11,10 +11,28 @@ import "../Styles/Budget.css";
 import "../Styles/Choosebudget.css";
 import Filter from "../Assets/Budget_Icons/filter.png";
 import Add from "../Assets/Budget_Icons/Add.png";
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 const Choosebudget = () => {
+  const navigate = useNavigate();
 
+  const Data = JSON.parse(localStorage.getItem('Data'));
+
+  const [input3Value, setInput3Value] = useState('');
+
+
+  const handleInput3FieldChange = (event) => {
+    setInput3Value(event.target.value);
+  };
+
+  const SetClickEventHandler = () => {
+    console.log("all data",input3Value);
+    const InputData = {
+      input3Value,
+    };
+    localStorage.setItem('InputData', JSON.stringify(InputData));
+    navigate('/budgetcategories');
+  };
 
 
   return (
@@ -36,7 +54,7 @@ const Choosebudget = () => {
         <div className="manualcategory2">
             <div>
             <h4>Total Budget</h4>
-            <span>&#8358;100,000.00</span>
+            <span>&#8358;{Data.inputValue}</span>
             </div>
 
             <div>
@@ -46,7 +64,7 @@ const Choosebudget = () => {
 
             <div>
             <h4>Remaining</h4>
-            <span>&#8358;100,000.00</span>
+            <span>&#8358;{Data.inputValue}</span>
             </div> 
         </div>
 
@@ -62,7 +80,7 @@ const Choosebudget = () => {
         <BudgetFooter />
       </div>
 
-      <div className="draw">
+      <form className="draw" onSubmit={SetClickEventHandler}>
         <p className="drawcentered1">Set Budget</p>
         <br/>
         <div className="centered">
@@ -72,25 +90,29 @@ const Choosebudget = () => {
 
         <br/>
         <br/>
-
+        
         <div className="centered2">
-            <p>Limit</p>
-            <article>10,000</article>
+          <p>Limit</p>
+          <input value={input3Value} onChange={handleInput3FieldChange} type="text" />
         </div>
         <br/>
-       
+        
         <p className="drawcentered">Month, April 2023</p>
 
         <div className="apart">
           <div className="designbuttons">
-              <Link to="/setbudget"><button>Cancel</button></Link>
+            <Link to="/setbudget"><button>Cancel</button></Link>
           </div>
 
           <div className="designbuttons">
-              <Link to="/budgetcategories"><button>Set</button></Link>
+            <button className="designbuttons">Set</button>
           </div>
+            
+            
         </div>
-      </div>
+
+        
+      </form>
 
     </div>
   );

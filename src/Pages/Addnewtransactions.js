@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Navbar from '../Components/Navbar';
-import CategoryFooter from '../Components/CategoryFooter';
+import TransactionFooter from '../Components/TransactionFooter';
 import { Link } from 'react-router-dom';
 import LeftArrow from "../Assets/Budget_Icons/caret_left.png"
 import RightArrow from "../Assets/Budget_Icons/caret_right.png";
@@ -16,9 +16,7 @@ import '../Styles/Addnewtransactions.css';
 
 const Addnewtransactions = () => {
 
-  
-
-  
+  const formData = JSON.parse(localStorage.getItem('formData'));
 
   return (
     
@@ -74,52 +72,21 @@ const Addnewtransactions = () => {
                 
             </div>
 
-            <div className="recenttransaction2">
-              <div className="recenttransaction3">
-                <img src={Subscription} alt=""/>  
-                <span className='separate'>
-                  <p>Subscription</p>
-                  <h4>4th April,2023</h4>
-                </span>
-              </div>
-
-              <br/>
-              <div>
-                <span className="redspan2">&#8358;-5,000.00</span>
-                <h4>10:00AM</h4>
-              </div>
-                
-            </div>
-
-            <div className="recenttransaction2">
-              <div className="recenttransaction3">
-                <img src={Food} alt=""/>  
-                <span className='separate'>
-                  <p>Food</p>
-                  <h4>2nd April,2023</h4>
-                </span>
-              </div>
-
-              <br/>
-              <div>
-                <span className="redspan2">&#8358;-10,000.00</span>
-                <h4>10:00AM</h4>
-              </div>
-                
-            </div>
-
 
             <div className="recenttransaction2">
               <div className="recenttransaction3">  
+                <img src={Shopping} alt=""/>  
+                {formData && (
                 <span className='separate'>
-                  <p></p>
-                  <h4></h4>
+                  <p>{formData.selectedCategory}</p>
+                  <h4>{formData.inputDate}</h4>
                 </span>
+                )}
               </div>
 
               <br/>
               <div>
-                <span className='greenspan2'></span>
+                <span className='greenspan2'>&#8358;{formData.inputValue}</span>
               </div>
                 
             </div>
@@ -141,7 +108,7 @@ const Addnewtransactions = () => {
 
         
         
-        <CategoryFooter />
+        <TransactionFooter />
       </div>
   )
 }

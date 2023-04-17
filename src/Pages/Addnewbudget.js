@@ -35,6 +35,10 @@ const Addnewbudget = () => {
     //event listener for onSubmit
     const btnClickEventHandler = () => {
       console.log("all data", inputValue,inputDate,inputDate2);
+      const Data = {
+        inputValue
+      };
+      localStorage.setItem('Data', JSON.stringify(Data));
       navigate('/setbudget');
     };
   
