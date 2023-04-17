@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 
 const Setbudget = () => {
 
-
+  const Data = JSON.parse(localStorage.getItem('Data'));
 
   return (
     <div>
@@ -35,7 +35,7 @@ const Setbudget = () => {
       <div className="manualcategory2">
         <div>
           <h4>Total Budget</h4>
-          <span>&#8358;100,000.00</span>
+          <span>&#8358;{Data.inputValue}</span>
         </div>
 
         <div>
@@ -45,7 +45,7 @@ const Setbudget = () => {
 
         <div>
           <h4>Remaining</h4>
-          <span>&#8358;100,000.00</span>
+          <span>&#8358;{Data.inputValue}</span>
         </div> 
       </div>
 
