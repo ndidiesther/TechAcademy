@@ -69,10 +69,10 @@ const ExpenseTransaction = () => {
         <h1>Add a new Transaction</h1>
 
         <div className="togglebuttons">
-          <button onClick={() => handleButtonExpenseClick('Expense')}>
+          <button className="septogglebuttons" onClick={() => handleButtonExpenseClick('Expense')}>
             Expense
           </button>
-          <button onClick={() => handleButtonIncomeClick('Income')}>
+          <button className="septogglebuttons2" onClick={() => handleButtonIncomeClick('Income')}>
             Income
           </button>
         </div>

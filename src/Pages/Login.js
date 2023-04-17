@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link } from "react-router-dom";
+import {Link,useNavigate} from "react-router-dom";
 import '../Styles/Login.css';
 
 
@@ -7,11 +7,11 @@ import '../Styles/Login.css';
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    //const navigate = useNavigate()
+    const navigate = useNavigate()
   
-    /*const handleSubmit = async (event) => {
+    const handleSubmit = async (event) => {
       event.preventDefault();
-      const response = await fetch('http://22a4-102-89-22-182.ngrok-free.app/api/UserIds', {
+      /*const response = await fetch('http://22a4-102-89-22-182.ngrok-free.app/api/UserIds', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -25,15 +25,26 @@ import '../Styles/Login.css';
       console.log(data);
       if (data.ok) {
         // Username and password are correct, navigate to another page
-        alert('Invalid username or password');
+        alert("Welcome");
         navigate('/ ');
       } else {
         // Username and/or password are incorrect, display error message
-        alert("Welcome");
-        navigate('/dashboard');
+       alert("wrong username and password");
+      }
+      */
+      const validUsers = ['Kingsley', 'Victor', 'Ojei',  'Esther','Semilore'];
+      const validPasswords = ['Kingsley123', 'Victor123', 'Ojei123','Esther123','Semilore123'];
+      const isValidUser = validUsers.includes(username);
+      console.log(validUsers);
+      const isValidPassword = validPasswords.includes(password);
+      if (isValidUser && isValidPassword) {
+        alert('Login successful!');
+        navigate('/transaction');
+      } else {
+        alert('Invalid username or password.');
       }
     };
-    */
+    
 
 
     
@@ -46,13 +57,13 @@ import '../Styles/Login.css';
         <div className="login">
             <div className="container">
                 <div>
-                  <form>
+                  <form onSubmit={handleSubmit}>
                     <div className="arrange">
                       <input type="text" placeholder="Enter Account number" value={username} onChange={(event) => setUsername(event.target.value)}/>
                       <input type="password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)}/>
     
                     <button className="loginButton">
-                      <Link to="/transaction" className="link1">Login</Link>
+                      <Link to="" className="link1">Login</Link>
                     </button>
                     </div>
                         
