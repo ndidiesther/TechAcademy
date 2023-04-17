@@ -62,25 +62,33 @@ const Choosebudget = () => {
         <BudgetFooter />
       </div>
 
-      <div>
-        <p>Set Budget</p>
-        <div>
+      <div className="draw">
+        <p className="drawcentered1">Set Budget</p>
+        <br/>
+        <div className="centered">
             <img src={Shopping} alt=""/>
             <p>Shopping</p>
         </div>
 
-        <div>
+        <br/>
+        <br/>
+
+        <div className="centered2">
             <p>Limit</p>
             <article>10,000</article>
         </div>
-        <p>Month, April 2023</p>
+        <br/>
+       
+        <p className="drawcentered">Month, April 2023</p>
 
-        <div className="designbuttons">
-            <Link to="/setbudget"><button>Cancel</button></Link>
-        </div>
+        <div className="apart">
+          <div className="designbuttons">
+              <Link to="/setbudget"><button>Cancel</button></Link>
+          </div>
 
-        <div className="designbuttons">
-            <Link to="/budgetcategories"><button>Set</button></Link>
+          <div className="designbuttons">
+              <Link to="/budgetcategories"><button>Set</button></Link>
+          </div>
         </div>
       </div>
 

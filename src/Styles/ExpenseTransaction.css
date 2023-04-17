@@ -49,13 +49,17 @@ span img{
    margin-left:-14px;
 }
 
-.togglebuttons{
-    text-align: center;
-    padding:1px 20px;
+.togglebuttons button{
     transform: scale(1.4); 
     transition: transform 0.2s;
-    color: #fff;
+    cursor:pointer;
 }
+
+
+.togglebuttons button:active{
+    background-color: rgb(233, 64, 13);
+}
+
 
 .forms{
     margin-top:20px;
