@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import '../Styles/Createuser.css';
+import "../Styles/Createuser.css";
+import Logo from "../Assets/Budget_Icons/gtcologo.png";
 
 const Createuser = () => {
   const navigate = useNavigate();
@@ -11,46 +12,27 @@ const Createuser = () => {
   };
 
   return (
-    <>
-      <div
-        className="all"
-        style={{
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundImage: "url(/icons/skyscrapper.jpg)",
-          opacity: "1",
-          positon: "relative",
-          height: "100vh",
-          width: "100%",
-        }}
-      >
-        <div
-          className="logo"
-          style={{
-            backgroundRepeat: "no-repeat",
-            backgroundImage: "url(/icons/GTCO-60.png)",
-            marginLeft: "260px",
-            position: "absolute",
-            top: "230px",
-            height: "350px",
-            width: "400px",
-          }}
-        ></div>
+    <div className="createuser">
+      <div className="overlay"></div>
+      <div className="wrapper">
+        <div className="entry-login">
+          <img className="gtlg logo" src={Logo} alt="" />
+        </div>
 
         <div className="signup">
           <h3>Open an account instantly</h3>
           <br />
-          <h4>
+          <p>
             Select from a number of account choices, fill in your information
             and get an account number within minutes
-          </h4>
-          <br />
-          <button type="submit" className="loginButton" onClick={handleClick}>
+          </p>
+          <br />  <br />
+          <button type="submit" className="createButton" onClick={handleClick}>
             Create new Account
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

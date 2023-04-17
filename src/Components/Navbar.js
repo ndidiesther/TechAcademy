@@ -19,6 +19,9 @@ const Navbar = () => {
       navigate('/login');
   };
   return (
+   <div className='Navbar-div'>
+
+    <div className='mainContainer'></div>
     <div className='navContainer'>
       <Link to ="/login">
       <div>
@@ -35,6 +38,7 @@ const Navbar = () => {
         <img src={Help} alt='' />
       </div>
     </div>
+   </div>
   )
 }
 

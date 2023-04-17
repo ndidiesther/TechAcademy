@@ -1,20 +1,37 @@
 .signup{
     padding-top: 350px;
-    padding-left:150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
 h3{
     color: #fff;
-    padding-left: 30px;
     font-weight: 800;
 }
 
-h4{
-    width:400px;
+.signup p{
+    width:500px;
     color: #fff;
-    padding-left: 1px;
     opacity: 0.9;
+    font-weight: 400;
+    font-size: 16px;
+}
+.createButton{
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    margin-left: 0px;
+    background-color:rgb(233, 64, 13);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
 }
 
 

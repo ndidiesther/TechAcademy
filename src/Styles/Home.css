@@ -33,7 +33,7 @@
 .login1:active {
   background-color: rgb(233, 64, 13);
 }
-.home, .loginall {
+.home, .loginall, .createuser {
   background-image: url(../Assets/Budget_Icons/house_635VI.jpg);
   background-size: cover;
   height: 100vh;

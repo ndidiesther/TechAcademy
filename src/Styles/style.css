@@ -1,15 +1,29 @@
 .top-date {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .top-date > span {
-    margin-left: 40px;
-    margin-right: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .content {
-    padding-top: 30px;
+  padding-top: 30px;
+  margin-left: 200px;
 }
 .filter {
-    margin-left: 60px;
+  margin-left: 60px;
+}
+.empty_trans {
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+.empty_trans > p {
+    margin-block-start: 2.5em;
+    font-size: 17px;
+    font-weight: normal;
 }

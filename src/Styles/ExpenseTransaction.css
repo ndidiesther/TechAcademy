@@ -49,15 +49,42 @@ span img{
    margin-left:-14px;
 }
 
+.togglebuttons {
+    margin-left: 60px;
+}
+
 .togglebuttons button{
-    transform: scale(1.4); 
-    transition: transform 0.2s;
-    cursor:pointer;
+    border: 2px solid orangered;
+
+}
+
+.septogglebuttons{
+    width:90px;
+    height:40px;
+    
+}
+
+.septogglebuttons:active{
+    background-color: rgb(233, 64, 13);    
 }
 
 
-.togglebuttons button:active{
-    background-color: rgb(233, 64, 13);
+.septogglebuttons:hover{
+    background-color: rgb(233, 64, 13);    
+}
+
+.septogglebuttons2{
+    width:90px;
+    height:40px;
+    
+}
+
+.septogglebuttons2:active{
+    background-color: rgb(233, 64, 13);    
+}
+
+.septogglebuttons2:hover{
+    background-color: rgb(233, 64, 13);    
 }
 
 

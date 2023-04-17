@@ -1,20 +1,38 @@
 .footer {
     overflow: hidden;
-    background-color: #FCFCFC;
+    background-color: black;
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    top: 0px;
+    left: 0;
+    width: 200px;
+    height: 100%;
     
 
 }
 .footer-black {
     display: flex;
-    align-items: center;
+    align-items: left;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 70px 50px;
 }
+.logo_new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+   
+}
+.logo_new > p {
+    color: white;
+    margin-left: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
 .footer-black > div, .footer-black > a{
     text-align: center;
+    padding-bottom: 40px;
 }
 .footer-black > a {
     color: #c6c6c6;

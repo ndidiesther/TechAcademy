@@ -1,9 +1,14 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+.mainContainer {
+    width: 200px;
+    height: 10px;
+}
 .navContainer {
     padding: 20px;
     background-color: #EC632B;
+    width: calc(100% - 200px);
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -14,4 +19,7 @@ body {
 }
 .navContainer > div:first-child {
     padding-top: 5px;
+}
+.Navbar-div {
+    display: flex;
 }
