@@ -1,42 +1,76 @@
-*{
-  margin:0;
-  padding:0;
- }
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  position: relative;
+}
 
- .login{
-    display:flex;
-    justify-content: space-between;
+.login {
+  display: flex;
+  justify-content: space-between;
+}
+.login1 {
+  background-color: rgb(233, 64, 13);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 60px;
+}
 
- }
- .login1{
-    background-color:rgb(233, 64, 13);
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-top: 300px;
-  }
-  
-  .login1:hover {
-    background-color:rgb(233, 64, 13);
-  }
-  
-  .login1:focus {
-    outline: none;
-  }
-  
-  .login1:active {
-    background-color: rgb(233, 64, 13);
-  }
+.login1:hover {
+  background-color: rgb(233, 64, 13);
+}
 
-  @media (max-width: 600px) {
-    /* CSS styles for small screens go here */
-    .home{
-      position: relative;
-      right:135px;
-    }
-  }
+.login1:focus {
+  outline: none;
+}
 
+.login1:active {
+  background-color: rgb(233, 64, 13);
+}
+.home, .loginall {
+  background-image: url(../Assets/Budget_Icons/house_635VI.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100vh; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.entry {
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+}
+.logo {
+  width: 120px;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  /* CSS styles for small screens go here */
+  .home {
+    position: relative;
+    right: 135px;
+  }
+}

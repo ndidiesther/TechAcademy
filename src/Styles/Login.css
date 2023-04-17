@@ -7,8 +7,6 @@ form{
     flex-direction:column;
     position: absolute;
     top:300px;
-    left: 120px;
-
 }
 
 
@@ -42,24 +40,55 @@ input {
 }
 
 .passwordlink{
-    margin-top:450px;
-    margin-left:120px;
+    margin-top:470px;
     display:flex;
     flex-direction: row;
     gap:38px;
 }
 
 .link2{
-    color:black;
+    color:white;
     text-decoration: none;
     cursor: pointer;
 
 }
 
 .link1{
-    color:black;
+    color:white;
+    font-weight: bold;
     text-decoration: none;
-    
+}
+.link3{
+    color:white;
+    text-decoration: none;
+}
+.entry-login {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+  }
+.wrapper {
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.gtlg {
+    margin-bottom: 100px;
+    text-align: center;
+}
+.arrange > input {
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 12px;
+    border: 1px solid white;
 }
 
 @media (max-width: 600px) {
