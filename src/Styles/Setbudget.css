@@ -26,6 +26,17 @@
 margin-left: 200px;
 
 }
+.recenttransaction6 {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.recenttransaction6 > img {
+    margin-right: 20px;
+}
 
 .recenttransaction4 h4{
     opacity:0.6;

@@ -54,38 +54,46 @@ span img{
 } */
 
 .togglebuttons button{
-    border: 2px solid orangered;
+    border: 1px solid #EC632B;
 
 }
 
 .septogglebuttons{
     width:90px;
     height:40px;
+    cursor: pointer;
     
 }
 
 .septogglebuttons:active{
-    background-color: rgb(233, 64, 13);    
+    background-color: #EC632B;    
 }
 
 
-.septogglebuttons:hover{
-    background-color: rgb(233, 64, 13);    
+/* .septogglebuttons:hover{
+    background-color:#EC632B;    
+} */
+.activeBut {
+    background-color: #EC632B;
+    color: white;
+    cursor: pointer;
 }
 
 .septogglebuttons2{
     width:90px;
     height:40px;
+    cursor: pointer;
     
 }
 
 .septogglebuttons2:active{
     background-color: rgb(233, 64, 13);    
+
 }
 
-.septogglebuttons2:hover{
+/* .septogglebuttons2:hover{
     background-color: rgb(233, 64, 13);    
-}
+} */
 
 
 .forms{

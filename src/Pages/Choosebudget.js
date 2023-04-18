@@ -15,6 +15,8 @@ import { Link,useNavigate } from 'react-router-dom';
 
 const Choosebudget = () => {
   const navigate = useNavigate();
+  //I added formData here
+  const formData = JSON.parse(localStorage.getItem('formData'));
 
   const Data = JSON.parse(localStorage.getItem('Data'));
 
@@ -59,7 +61,7 @@ const Choosebudget = () => {
 
             <div>
             <h4>Total Spent</h4>
-            <span className="redspan">&#8358;0.00</span>
+            <span className="redspan">&#8358;{formData.inputValue}</span>
             </div>
 
             <div>

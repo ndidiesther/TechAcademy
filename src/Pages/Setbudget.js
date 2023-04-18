@@ -20,6 +20,8 @@ import { Link } from 'react-router-dom';
 const Setbudget = () => {
 
   const Data = JSON.parse(localStorage.getItem('Data'));
+  //I added formData in here
+  const formData = JSON.parse(localStorage.getItem('formData'));
 
   return (
     <div>

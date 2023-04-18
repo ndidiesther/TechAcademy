@@ -13,8 +13,13 @@ import { Link } from 'react-router-dom';
 
 const Budgetcategories = () => {
 
-  const InputData = JSON.parse(localStorage.getItem('Data'));
 
+  const InputData= JSON.parse(localStorage.getItem('InputData'));
+  const Data= JSON.parse(localStorage.getItem('Data'));
+
+  //formData for total spent category
+  const formData= JSON.parse(localStorage.getItem('formData'));
+  
   
 
   return (
@@ -35,17 +40,17 @@ const Budgetcategories = () => {
       <div className="manualcategory2">
         <div>
           <h4>Total Budget</h4>
-          <span>&#8358;{InputData.inputValue}</span>
+          <span>&#8358;{Data.inputValue}</span>
         </div>
 
         <div>
           <h4>Total Spent</h4>
-          <span className="redspan">&#8358;0.00</span>
+          <span className="redspan">&#8358;{formData.InputValue}</span>
         </div>
 
         <div>
           <h4>Remaining</h4>
-          <span>&#8358;{InputData.inputValue}</span>
+          <span>&#8358;{Data.inputValue}</span>
         </div> 
       </div>
 
@@ -63,9 +68,9 @@ const Budgetcategories = () => {
                 <img src={Shopping} alt=""/>  
                 <span className='separatemiddle'>
                   <h2>Shopping</h2>
-                  <h4>limit: &#8358;{InputData.input3Value}</h4>
-                  <h4>Spent:&#8358;</h4>
-                  <h4>Remaining:&#8358;{}</h4>
+                  <h4>Limit:&#8358;{InputData.input3Value}</h4>
+                  <h4>Spent:&#8358;0.00</h4>
+                  <h4>Remaining:&#8358;{InputData.input3Value}</h4>
                 </span>
 
                 <div className="greendot">

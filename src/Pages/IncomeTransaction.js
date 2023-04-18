@@ -70,18 +70,18 @@ const IncomeTransaction = () => {
       <Navbar />
       <br/>
       <div className="overage">
-        <h1>Add a new Transaction</h1>
+        <h1>Add a new Transaction</h1> <br />
 
         <div className="togglebuttons">
           <button className="septogglebuttons" onClick={() => handleButtonExpenseClick('Expense')}>
             Expense
           </button>
-          <button className="septogglebuttons2" onClick={() => handleButtonIncomeClick('Income')}>
+          <button className="septogglebuttons2 activeBut" onClick={() => handleButtonIncomeClick('Income')}>
             Income
           </button>
         </div>
         <div className="forms">
-          <form onSubmit={btnClickEventHandler}>
+          <form>
             <div>
               <input value={inputValue} onChange={handleInputFieldChange} type="text" placeholder="Amount" />
               <span><img src={Naira} alt='' /></span>

@@ -16,6 +16,8 @@ const ExpenseTransaction = () => {
   const [input2Value, setInput2Value] = useState('');
   const [inputDate, setInputDate] = useState('');
 
+
+
   const handleInputFieldChange = (event) => {
     setInputValue(event.target.value);
   };
@@ -74,10 +76,10 @@ const ExpenseTransaction = () => {
       <Navbar />
       <br/>
       <div className="overage">
-        <h1>Add a new Transaction</h1>
+        <h1>Add a new Transaction</h1> <br />
 
         <div className="togglebuttons">
-          <button className="septogglebuttons" onClick={() => handleButtonExpenseClick('Expense')}>
+          <button className="septogglebuttons activeBut" onClick={() => handleButtonExpenseClick('Expense')}>
             Expense
           </button>
           <button className="septogglebuttons2" onClick={() => handleButtonIncomeClick('Income')}>
@@ -85,7 +87,7 @@ const ExpenseTransaction = () => {
           </button>
         </div>
         <div className="forms">
-          <form onSubmit={btnClickEventHandler}>
+          <form>
             <div>
               <input value={inputValue} onChange={handleInputFieldChange} type="text" placeholder="Amount" />
               <span><img src={Naira} alt='' /></span>

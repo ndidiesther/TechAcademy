@@ -17,6 +17,8 @@ import Setbudget from "./Pages/Setbudget";
 import Choosebudget from "./Pages/Choosebudget";
 import Category from "./Pages/Category";
 import Budgetcategories from "./Pages/Budgetcategories";
+import IncomeCategory from "./Pages/IncomeCategory";
+import ExpenseCategory from "./Pages/ExpenseCategory";
 
 function App() {
 
@@ -39,8 +41,10 @@ function App() {
         <Route path='/addnewbudget' element={<Addnewbudget />}/>
         <Route path='/setbudget' element={<Setbudget />}/>
         <Route path='/choosebudget' element={<Choosebudget />}/>
-        <Route path="/category" element={<Category />} />
+        {/* <Route path="/category" element={<ExpenseCategory />} /> */}
         <Route path='/budgetcategories' element={<Budgetcategories />}/>
+        <Route path="/incomeCategory" element={<IncomeCategory />}  />
+        <Route path="/expenseCategory" element={<ExpenseCategory />}/>
 
 
       </Routes>
