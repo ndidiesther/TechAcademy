@@ -28,7 +28,7 @@ const IncomeCategory = () => {
   };
 
   const handleButtonExpenseClick = (buttonName) => {
-    navigate("/expensecategory");
+    navigate("/category");
   };
 
   const handleButtonIncomeClick = () => {

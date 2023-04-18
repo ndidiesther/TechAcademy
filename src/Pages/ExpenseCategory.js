@@ -33,7 +33,7 @@ const ExpenseCategory = () => {
   };
 
   const handleButtonExpenseClick = (buttonName) => {
-    navigate("/expensecategory");
+    navigate("/category");
   };
 
   const handleButtonIncomeClick = () => {

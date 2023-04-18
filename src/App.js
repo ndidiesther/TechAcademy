@@ -41,7 +41,7 @@ function App() {
         <Route path='/addnewbudget' element={<Addnewbudget />}/>
         <Route path='/setbudget' element={<Setbudget />}/>
         <Route path='/choosebudget' element={<Choosebudget />}/>
-        {/* <Route path="/category" element={<ExpenseCategory />} /> */}
+        <Route path="/category" element={<ExpenseCategory />} />
         <Route path='/budgetcategories' element={<Budgetcategories />}/>
         <Route path="/incomeCategory" element={<IncomeCategory />}  />
         <Route path="/expenseCategory" element={<ExpenseCategory />}/>
