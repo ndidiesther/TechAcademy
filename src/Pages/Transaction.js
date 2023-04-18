@@ -27,7 +27,7 @@ const Transaction = () => {
         <p>No record in this month. Tap + to add new expense or income</p>
       </div>
       <div className="rightwing2">
-          <Link to="/addnewbudget"><img src={Add} alt="" /></Link>
+          <Link to="/addnewtransactions"><img src={Add} alt="" /></Link>
       </div>
       <TransactionFooter />
     </div>

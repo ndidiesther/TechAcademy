@@ -50,9 +50,10 @@ const Budget = () => {
 
       <div className="center1">
         <img src={Estimates} alt="" />
+        <p>No budget have been applied for this month. Tap + to create a new budget</p>
       </div>
 
-      <div className="center2"> No budget have been applied for this month. Tap + to create a new budget</div>
+   
 
       <div className="rightwing2">
           <Link to="/addnewbudget"><img src={Add} alt="" /></Link>
