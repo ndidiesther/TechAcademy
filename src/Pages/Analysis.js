@@ -28,6 +28,24 @@ const Analysis = () => {
         </div>
       </div>
 
+      <br />
+      <div className="manualcategory2">
+        <div>
+          <h4>Expense</h4>
+          <span className="redspan">&#8358;0.00</span>
+        </div>
+
+        <div>
+          <h4>Income</h4>
+          <span >&#8358;0.00</span>
+        </div>
+
+        <div>
+          <h4>Total</h4>
+          <span>&#8358;0.00</span>
+        </div> 
+      </div>
+
       <div className="empty_trans">
         <img src={EmptyAnalysis} alt="" />
         <p>No analysis for this month</p>

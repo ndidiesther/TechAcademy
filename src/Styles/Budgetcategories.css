@@ -1,0 +1,43 @@
+.recenttransactional{
+    position: relative;
+    margin-left: 430px;
+   
+
+}
+
+.recenttransactional2 h4{
+    font-size: 13px;
+    
+
+}
+
+.recenttransactional2 img{
+    height: 90px;
+}
+
+.separatemiddle{
+    position: absolute;
+    left: 110px;
+    
+}
+
+.separatemiddle h2{
+    font-size: medium;
+    font-weight: 700;
+}
+
+
+.greendot p{
+    color: green;
+    position: absolute;
+    top:10px;
+    left: 400px;
+
+}
+
+.greendot h6{
+    position: absolute;
+    top:39px;
+    left: 370px;
+
+}

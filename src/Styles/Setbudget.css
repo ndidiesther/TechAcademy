@@ -13,15 +13,24 @@
     background-color: rgb(233, 64, 13);
 }
 
-
-.recenttransaction4{
+.recenttransaction4 {
     display:flex;
     flex-direction: row;
-    margin-left:30%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    width: 400px;
+    margin-bottom: 30px;
+}
+.recenttransaction3{
+margin-left: 200px;
 
 }
 
 .recenttransaction4 h4{
     opacity:0.6;
     padding-top:14px;
+}
+.designbuttons {
+    margin-left: 40px;
 }

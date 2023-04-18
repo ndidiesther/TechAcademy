@@ -4,6 +4,7 @@ import Naira from "../Assets/Budget_Icons/naira.png";
 import '../Styles/ExpenseTransaction.css';
 import { useNavigate } from 'react-router-dom';
 import '../Styles/Addnewbudget.css';
+import BudgetFooter from '../Components/BudgetFooter';
 
 
 
@@ -50,26 +51,30 @@ const Addnewbudget = () => {
       <div>
         <Navbar />
         <br/>
-        <div className="overage">
+        <div className="overage addnew">
           <h1>Add a new budget</h1>
   
           <div className="forms">
             <form onSubmit={btnClickEventHandler}>
               <div>
-                <input value={inputValue} onChange={handleInputFieldChange} type="text" placeholder="Amount" />
+                <p className='inputLabel'>Budget Amount</p>
+                <input className='inputForm' value={inputValue} onChange={handleInputFieldChange} type="text" placeholder="Amount" />
                 <span><img src={Naira} alt='' /></span>
               </div>
               
               <div>
-                <input value={inputDate} onChange={handleInputDateField} className="change" type="date" placeholder="Start Date" />
+              <p className='inputLabel'>Start Date</p>
+                <input  className='inputForm change' value={inputDate} onChange={handleInputDateField}  type="date" placeholder="Start Date" />
               </div>  
           
   
               <div>
-                <input value={inputDate2} onChange={handleInputDateField2} className="change" type="date" placeholder="End Date" />
+              <p className='inputLabel'>End Date</p>
+                <input className='inputForm change' value={inputDate2} onChange={handleInputDateField2}  type="date" placeholder="End Date" />
               </div>   
   
-              <button className="buttontag">Next</button>            
+              <br />
+              <button  className="buttontag">Next</button>            
             </form>
   
           </div>
@@ -78,6 +83,7 @@ const Addnewbudget = () => {
           
   
         </div>
+        <BudgetFooter />
       </div>
     )
   }

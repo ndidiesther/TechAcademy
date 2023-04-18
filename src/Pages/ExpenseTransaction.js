@@ -3,7 +3,7 @@ import Navbar from '../Components/Navbar';
 import Naira from "../Assets/Budget_Icons/naira.png";
 import '../Styles/ExpenseTransaction.css';
 import { useNavigate } from 'react-router-dom';
-
+import TransactionFooter from "../Components/TransactionFooter";
 
 
 
@@ -120,6 +120,7 @@ const ExpenseTransaction = () => {
         
 
       </div>
+      <TransactionFooter />
     </div>
   )
 }

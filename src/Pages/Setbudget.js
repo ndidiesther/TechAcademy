@@ -5,6 +5,10 @@ import LeftArrow from "../Assets/Budget_Icons/caret_left.png"
 import RightArrow from "../Assets/Budget_Icons/caret_right.png";
 import Shopping from "../Assets/Budget_Icons/shopping.png";
 import Subscription from "../Assets/Budget_Icons/subscription.png";
+import Transportation from "../Assets/Budget_Icons/transport.png";
+import Health from "../Assets/Budget_Icons/Health.png";
+import Education from "../Assets/Budget_Icons/Education.png";
+import Entertainment from "../Assets/Budget_Icons/Entertainment.png"
 import Food from "../Assets/Budget_Icons/food.png";
 import "../Styles/style.css";
 import "../Styles/Budget.css";
@@ -53,8 +57,8 @@ const Setbudget = () => {
 
       <div className="center2"> 
         <h2>Budget Categories: April, 2023</h2>
-        <h6>Currently, no budget category is applied for this month. Begin by setting budget limit for this month</h6>
-        <h6>Not budgeted this month</h6>
+        <p>Currently, no budget category is applied for this month. Begin by setting budget limit for this month</p>
+        <h2>Not budgeted this month</h2>
       </div>
 
       <br/>
@@ -79,6 +83,62 @@ const Setbudget = () => {
                 <img src={Subscription} alt=""/>  
                 <span className='separate2'>
                   <h4>Subscription</h4>
+                </span>
+                <div className="designbuttons">
+                    <Link to="/choosebudget"><button>Set Budget</button></Link>
+               
+                </div>
+            </div>
+
+                
+        </div>
+        <div className="recenttransaction3">
+            <div className="recenttransaction4">
+                <img src={Food} alt=""/>  
+                <span className='separate2'>
+                  <h4>Food</h4>
+                </span>
+                <div className="designbuttons">
+                    <Link to="/choosebudget"><button>Set Budget</button></Link>
+               
+                </div>
+            </div>
+
+                
+        </div>
+        <div className="recenttransaction3">
+            <div className="recenttransaction4">
+                <img src={Entertainment} alt=""/>  
+                <span className='separate2'>
+                  <h4>Entertainment</h4>
+                </span>
+                <div className="designbuttons">
+                    <Link to="/choosebudget"><button>Set Budget</button></Link>
+               
+                </div>
+            </div>
+
+                
+        </div>
+        <div className="recenttransaction3">
+            <div className="recenttransaction4">
+                <img src={Education} alt=""/>  
+                <span className='separate2'>
+                  <h4>Education</h4>
+                </span>
+                <div className="designbuttons">
+                    <Link to="/choosebudget"><button>Set Budget</button></Link>
+               
+                </div>
+            </div>
+
+                
+        </div>
+        <div className="recenttransaction3">
+            <div className="recenttransaction4">
+                <img src={Health} alt=""/>  
+                <span className='separate2'>
+                  <h4>Health</h4>
                 </span>
                 <div className="designbuttons">
                     <Link to="/choosebudget"><button>Set Budget</button></Link>

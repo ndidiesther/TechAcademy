@@ -46,12 +46,12 @@ span{
 
 span img{
    margin-top: 2px;
-   margin-left:-14px;
+   margin-left:-20px;
 }
 
-.togglebuttons {
+/* .togglebuttons {
     margin-left: 60px;
-}
+} */
 
 .togglebuttons button{
     border: 2px solid orangered;
@@ -109,9 +109,12 @@ span img{
 }
 
 .overage{
-    width: 30%; /* or any width you desire */
-    margin: 0 auto;
-  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    flex-direction: column;
+    padding-top: 10px;
 }
 
 select {

@@ -1,0 +1,26 @@
+.inputForm{
+    background-color: rgba(170, 170, 170, 0.2);
+    outline: none;
+    border: none;
+    padding: 15px 0 15px 15px;
+    border-radius: 5px;
+}
+.inputLabel {
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+    margin-block-end: 0.5em;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+    margin-left: 20px;
+    
+}
