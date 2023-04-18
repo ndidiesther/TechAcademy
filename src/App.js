@@ -15,6 +15,7 @@ import Addnewtransactions from "./Pages/Addnewtransactions";
 import Addnewbudget from "./Pages/Addnewbudget";
 import Setbudget from "./Pages/Setbudget";
 import Choosebudget from "./Pages/Choosebudget";
+import Budgetcategories from "./Pages/Budgetcategories";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <Route path='/addnewbudget' element={<Addnewbudget />}/>
         <Route path='/setbudget' element={<Setbudget />}/>
         <Route path='/choosebudget' element={<Choosebudget />}/>
+        <Route path='/budgetcategories' element={<Budgetcategories />}/>
 
 
       </Routes>
